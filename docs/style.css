@@ -1,4 +1,4 @@
-/* 讀書會整理：共用樣式（黑金配色） */
+/* AI讀書會筆記：共用樣式（黑金配色） */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap");
 :root {
   --bg: #0A0A0B;
@@ -119,3 +119,5 @@ blockquote { margin: 0 0 18px; padding: 4px 16px; border-left: 3px solid var(--g
 .community h2 .count { font-size: 14px; font-weight: 400; color: var(--muted); }
 .community-desc { color: var(--muted); font-size: 15px; margin: -6px 0 4px; }
 .community-links { font-size: 15px; font-weight: 700; margin: 0 0 16px; }
+
+.topbar .brand span { font-size: .8em; font-weight: 700; margin-left: 4px; }
