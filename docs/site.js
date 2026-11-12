@@ -33,7 +33,8 @@
   document.querySelectorAll(".video[data-video]").forEach(function (box) {
     var id = VIDEOS[box.dataset.video];
     if (id && isFile(id)) {
-      box.innerHTML = '<video controls preload="metadata" playsinline src="' + id + '"></video>';
+      var poster = box.dataset.poster ? ' poster="' + box.dataset.poster + '"' : "";
+      box.innerHTML = '<video controls preload="metadata" playsinline' + poster + ' src="' + id + '"></video>';
     } else if (id && id.indexOf("drive:") === 0) {
       // Google雲端硬碟影片（需設成「知道連結的人可檢視」）
       box.innerHTML =
