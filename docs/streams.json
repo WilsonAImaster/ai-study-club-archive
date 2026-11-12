@@ -1,0 +1,35 @@
+[
+  {
+    "date": "2026-11-11",
+    "platform": "Discord",
+    "title": "AI寫的貼文為什麼沒流量？Social Post實作＋FB／Threads演算法",
+    "summary": "跟著做一次Social Post Skill：寫法Mode A／B／C、發文前三檢查；FB和Threads的實測技巧；還有Editkin剪輯軟體、開源授權怎麼選、一張圖生成3D模型。",
+    "tags": [
+      "Social Post",
+      "演算法",
+      "Threads",
+      "FB",
+      "開源授權",
+      "Editkin",
+      "3D"
+    ],
+    "path": "streams/2026-11-11-ama-social-post/",
+    "community": "freetwai"
+  },
+  {
+    "date": "2026-10-14",
+    "platform": "Discord",
+    "title": "AI額度用完，自動換另一個AI接手？自由工坊10/14重點",
+    "summary": "不會寫程式也能參與開源：從發一個Issue開始。還有Project Hub，把Claude Code、Codex、Gemini收進同一個視窗，額度用完自動交接。22個章節＋白話重點。",
+    "tags": [
+      "自由工坊",
+      "開源",
+      "Claude Code",
+      "Codex",
+      "Project Hub",
+      "多AI協作"
+    ],
+    "path": "streams/2026-10-14-ama-project-hub/",
+    "community": "freetwai"
+  }
+]
