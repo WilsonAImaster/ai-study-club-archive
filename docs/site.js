@@ -35,6 +35,16 @@
     if (id && isFile(id)) {
       var poster = box.dataset.poster ? ' poster="' + box.dataset.poster + '"' : "";
       box.innerHTML = '<video controls preload="metadata" playsinline' + poster + ' src="' + id + '"></video>';
+      // 手機瀏覽器不播GitHub附件影片時，改顯示下載按鈕
+      var size = box.dataset.size ? "（" + box.dataset.size + "）" : "";
+      var fallback = function () {
+        box.innerHTML = '<div class="placeholder"><div><p>這個瀏覽器無法直接播放，請下載後觀看' + size + '</p>' +
+          '<p><a class="btn" href="' + id + '">📥 下載影片</a></p><p class="video-caption">手機建議連Wi-Fi下載</p></div></div>';
+      };
+      var v = box.querySelector("video");
+      v.addEventListener("error", fallback);
+      var src = v.querySelector("source") || v;
+      src.addEventListener("error", fallback);
     } else if (id && id.indexOf("drive:") === 0) {
       // Google雲端硬碟影片（需設成「知道連結的人可檢視」）
       box.innerHTML =
